@@ -10,17 +10,15 @@ export class LoginService {
 
   login(username: string, password: string): Promise<ILoginResult> {
   
-    let x: ILoginResult = { loginSuccessful: true };
-
-   
-
+    let isLogin: ILoginResult = { loginSuccessful: true };
+    
     let loginResult = new Promise<ILoginResult>((resolve, reject) => {
       if (username && password) {
-        x.loginSuccessful = true;
-        resolve(x);
+        isLogin.loginSuccessful = true;
+        resolve(isLogin);
       } else {
-        x.loginSuccessful = false;
-        reject(x);
+        isLogin.loginSuccessful = false;
+        reject(isLogin);
       }
       
     });
