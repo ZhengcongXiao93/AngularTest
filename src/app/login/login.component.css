@@ -1,0 +1,53 @@
+.loginBox{
+    border: 1px solid black;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 30%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    background: #4682B4;
+    background: linear-gradient(to bottom, #4682B4, #ADD8E6, #FFFFFF);
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red
+}
+
+input.ng-valid.ng-touched {
+    border: 2px solid green
+}
+
+.err {
+    color:red;
+    text-align: center;
+}
+
+.usernameInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+}
+
+.passwordInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+}
+
+.loginButton {
+  border: none;
+  margin: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
+  color: white;
+  background-color: rgb(104, 161, 226);
+}
